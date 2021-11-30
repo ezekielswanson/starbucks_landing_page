@@ -1,5 +1,14 @@
-const hamburgerMenu = documnent.querySelector("#menu-btn")
+const btn = document.getElementById("menu-btn");
+const hiddenBtn = document.getElementById('menu');
 
-function menuToggle () {
-    console.log(1);
+function menuToggle() {
+    
+    btn.classList.toggle('open');
+    hiddenBtn.classList.toggle('hidden');
+    document.body.classList.toggle('no-scroll');
+    
 }
+
+
+
+btn.addEventListener('click', menuToggle)
