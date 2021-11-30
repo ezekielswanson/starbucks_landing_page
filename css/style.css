@@ -1,3 +1,4 @@
+
 /**** ===== GLOBAL STYLES ===== *****/
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap');
@@ -41,6 +42,9 @@ img {
     max-width: 100%;
 }
 
+section a {
+    color: white;
+}
 
 /**** ===== SECTION STYLES ===== *****/
 
@@ -109,6 +113,11 @@ img {
     align-items: center;
 }
 
+
+/**** ===== UTLITIES ===== *****/
+
+
+
 /* Buttons */
 
 .btn {
@@ -123,7 +132,197 @@ img {
     text-decoration: none;
 }
 
+.btn-dark-outline {
+    border-color: black;
+    color: black;
+}
+
+.btn-light-outline {
+    border-color: white;
+    color: white;
+}
+
 .btn-dark {
     background-color: black;
     color: white;
 }
+
+
+.btn-dark-outline:hover,
+.btn-light-outline:hover
+ {
+    background-color: rgba(0,0,0,0.06);
+
+}
+
+.btn-dark:hover {
+    background-color:#333;
+}
+
+
+/* Background */
+
+.bg-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.bg-extra {
+    background-color: var(--color-extra);
+    color: black;
+}
+
+/* Text */
+
+
+.text_center {
+    text-align: center;
+}
+
+.text_xl {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+
+}
+
+.text_md {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text_sm {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+
+/* Padding */
+
+.py_sm {
+    padding: 10px 0;
+}
+
+
+.py_sm {
+    padding: 20px 0;
+}
+
+
+.py_lg {
+    padding: 40px 0;
+}
+
+
+/* Boxes */
+
+.box {
+    margin-bottom: 30px;
+}
+
+.box_inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* Grid Styles */
+
+.grid_col_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+
+}
+
+.box_text {
+    max-width: 500px;
+    text-align: center;
+    justify-self: center;
+    padding: 20px 0;
+}
+
+.box_text a {
+    text-decoration: none;
+}
+
+.box_text .btn {
+    margin-top: 20px;
+}
+
+.grid_reverse :first-child {
+    order: 2;
+}
+
+
+/* Footer And Social */
+.footer_container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px 30px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+}
+
+.social img {
+    width: 35px; 
+    height: 35px;
+    text-decoration: none;
+}
+
+.social a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.divider {
+    width: 95%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 40px auto;
+}
+
+/**** ===== MEDIA QUERIERS  ===== *****/
+
+@media(max-width: 960px) {
+
+    .text_xl {
+        font-size: 30px;
+    }
+
+    .text_lg {
+        font-size: 25px;
+    }
+
+    .text_md {
+        font-size: 19px;
+    }
+}
+
+
+
+@media(min-wdith: 1440px) {
+
+    .box {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
