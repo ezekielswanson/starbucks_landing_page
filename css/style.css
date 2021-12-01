@@ -113,6 +113,11 @@ section a {
     align-items: center;
 }
 
+.navbar_nav_right li:nth-child(3) a {
+    color: white;
+
+}
+
 
 /**** ===== UTLITIES ===== *****/
 
