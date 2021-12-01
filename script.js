@@ -6,6 +6,7 @@ function menuToggle() {
     btn.classList.toggle('open');
     hiddenBtn.classList.toggle('hidden');
     document.body.classList.toggle('no-scroll');
+    console.log(1);
     
 }
 
